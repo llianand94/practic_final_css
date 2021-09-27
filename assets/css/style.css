@@ -1,0 +1,9 @@
+:root{
+  --color-of-theme: #65C466;
+  --font-size: 16px;
+  --border-size: 0.5rem;
+ }
+body{
+  padding: 0.5rem 1rem;
+  font-size: var(--font-size) ;
+}
