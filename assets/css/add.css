@@ -1,0 +1,40 @@
+.wrapper-main-img{
+  min-width: 70%;
+  width: 80%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.response-wrapper{
+  padding-top: 65%;
+  position: relative;
+}
+.main-img{
+  display: block;
+  max-width: 100%;
+  width: inherit;
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+}
+/* чтобы текст небыл более 2х строк */
+.row-overflow{
+  max-height: calc(1.5rem*2);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; 
+  overflow: hidden;
+}
+/* resize */
+textarea{
+  width: 100%;
+  padding: 1rem;
+  resize: none;
+  border: none;
+}
