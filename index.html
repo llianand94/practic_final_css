@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Classic low</title>
+  <title>Classic lows</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/custom-grid.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/navigation-section.css">
-  <link rel="stylesheet" href="./assets/css/ask-form.css">
+  <link rel="stylesheet" href="./assets/css/form-section.css">
 </head>
 <body>
-  <header class="navigation-section">
+  <header class="navigation-section main-border">
     <nav class="container flex">
       <a href="#" class="logo">Классика права</a>
-      <div class="nav-btn-wrapper">
+      <div class="nav-btn-wrapper box-shadow">
         <a href="#" class="nav-btn">
           <img src="./assets/images/Vector.png" alt="">
           <img src="./assets/images/Vector.png" alt="">
@@ -31,11 +31,11 @@
         </ul>      
     </nav>
   </header>
-  <section class="ask-form container">
+  <section class="form-section container">
     <article class="col-12">
       
-        <h1 class="uppercase">задайте вопрос юристу онлайн</h1>
-        <p>Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании</p>
+        <h1 class="form-capture uppercase">задайте вопрос юристу онлайн</h1>
+        <p >Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании</p>
           </article>
           <div class="wrapper-main-img">
             <div class="inner-main-img">
@@ -43,14 +43,15 @@
             </div>
           </div>
       <div class="col-12">
-        <form action="#" method="GET">
-          <input type="text" name="user-info" placeholder="Введите номер Вашего телефона" required>
-          <textarea type="text" name="message" placeholder="Введите Ваш вопрос..." required></textarea>
-            <label>
-            <input type="checkbox" name="" id="">
-            <span class="text-checkbox">Нажимая кнопку "Отправить" вы соглашаетесь с политикой конфиденциальности</span>
-            <input type="button" value="Отправить вопрос">
-          </label>
+        <form class="question-form" action="#" method="GET">
+
+          <input class="main-border box-shadow" type="text" name="user-info" placeholder="Введите номер Вашего телефона" required>
+          <textarea class="main-border box-shadow" rows="5" type="text" name="message" placeholder="Введите Ваш вопрос..." required></textarea>
+            <div class="submit-question-wrapper">
+              <input class="" type="checkbox" name="" id="">
+              <span class="text-checkbox">Нажимая кнопку "Отправить" вы соглашаетесь с политикой конфиденциальности</span>
+              <input class="main-border btn-checkbox" type="button" value="Отправить вопрос">
+            </div>
         </form>
       </div>  
   </section>

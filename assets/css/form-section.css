@@ -1,0 +1,60 @@
+.form-capture{
+ margin: 1.5rem 0;
+ font-size: 1.5rem;
+}
+.wrapper-main-img{  
+  width: 100%;  
+  margin: 0 auto 1rem;
+}
+.inner-main-img{
+  --height-divine-by-width: 1.2791; 
+padding-top: calc(var(--height-divine-by-width)*100%);
+
+position: relative;
+margin: -2rem auto 0;
+}
+
+.main-img{  
+  display: inline-block; 
+  height: inherit;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+} 
+.question-form>*{
+ width: 100%;
+ margin-bottom: 1rem;
+}
+.question-form>input{
+  padding: 0.5rem;
+}
+
+.submit-question-wrapper{
+display: flex;
+align-items: center;
+}
+span.text-checkbox{
+  margin: 0 0.5rem;
+  font-size: 0.7rem;
+  line-height: 0.8rem;
+}
+.btn-checkbox{
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  background-color: var(--color-of-theme);
+  color: var(--white-color);
+}
+::placeholder, input::placeholder{
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  color: #C2C2C2;
+}
+textarea{
+  padding: 0.5rem;
+  resize: none;
+}
