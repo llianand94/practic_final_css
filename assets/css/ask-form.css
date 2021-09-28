@@ -1,0 +1,41 @@
+
+.wrapper-main-img{
+  width: 100%;
+  background-color: rgb(103, 151, 146);
+  
+}
+.inner-main-img{
+  --height-divine-by-width: 0.784849;
+padding-top: 100%;
+/* background-color: turquoise; */
+position: relative;
+margin: -3rem auto 0;
+
+}
+
+
+/* .wrapper-main-img{
+  min-width: 70%;
+  width: 80%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.response-wrapper{
+  padding-top: 65%;
+  position: relative;
+}*/
+.main-img{
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  /* height: 100%; */
+  
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+} 

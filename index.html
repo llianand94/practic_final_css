@@ -8,17 +8,20 @@
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/custom-grid.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/navigation.css">
+  <link rel="stylesheet" href="./assets/css/navigation-section.css">
+  <link rel="stylesheet" href="./assets/css/ask-form.css">
 </head>
 <body>
-  <header class="navigation">
+  <header class="navigation-section">
     <nav class="container flex">
       <a href="#" class="logo">Классика права</a>
-      <a href="#" class="nav-btn">
-        <img src="./assets/images/Button-row.png" alt="">
-        <img src="./assets/images/Button-row.png" alt="">
-        <img src="./assets/images/Button-row.png" alt="">
-      </a>      
+      <div class="nav-btn-wrapper">
+        <a href="#" class="nav-btn">
+          <img src="./assets/images/Vector.png" alt="">
+          <img src="./assets/images/Vector.png" alt="">
+          <img src="./assets/images/Vector.png" alt="">
+        </a>   
+      </div>   
         <ul class="nav-list">
           <li class="nav-item"><a href="#main" class="nav-link">+7 (000) 000-00-00</a></li>
           <li class="nav-item"><a href="#about" class="nav-link">Бесплатная консультация</a></li>
@@ -29,22 +32,35 @@
     </nav>
   </header>
   <section class="ask-form container">
-    <article class="row">
-      <div class="col-12">
-        <h1>задайте вопрос юристу онлайн</h1>
+    <article class="col-12">
+      
+        <h1 class="uppercase">задайте вопрос юристу онлайн</h1>
         <p>Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании</p>
-      </div>
+          </article>
+          <div class="wrapper-main-img">
+            <div class="inner-main-img">
+              <img src="./assets/images/main-theme-image.png" alt="main image" class="main-img">
+            </div>
+          </div>
       <div class="col-12">
         <form action="#" method="GET">
-          <input type="text" name="user-info" placeholder="Введите номер Вашего телефона" required><label></label>
+          <input type="text" name="user-info" placeholder="Введите номер Вашего телефона" required>
           <textarea type="text" name="message" placeholder="Введите Ваш вопрос..." required></textarea>
-            <label></label>
-            <input type="radio" name="" id="">
+            <label>
+            <input type="checkbox" name="" id="">
+            <span class="text-checkbox">Нажимая кнопку "Отправить" вы соглашаетесь с политикой конфиденциальности</span>
+            <input type="button" value="Отправить вопрос">
+          </label>
         </form>
+      </div>  
+  </section>
+  <section class="services-screen">
+    <div class="bg-image">
+      <div class="wrapper-text">
+        <h1 class="uppercase">юристы для бизнеса</h1>
+        <p>сопровождение юридических лиц во всех областях права</p>
       </div>
-    
-    
-  </article>
+    </div>
   </section>
 </body>
 </html>
