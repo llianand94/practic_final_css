@@ -1,20 +1,17 @@
-.form-capture{
- margin: 1.5rem 0;
- font-size: 1.5rem;
+
+.wrapper-img{  
+  width: 100%;   
 }
-.wrapper-main-img{  
-  width: 100%;  
-  margin: 0 auto 1rem;
-}
-.inner-main-img{
+.inner-img{
   --height-divine-by-width: 1.2791; 
 padding-top: calc(var(--height-divine-by-width)*100%);
-
 position: relative;
-margin: -2rem auto 0;
-}
 
-.main-img{  
+}
+.to-upp-img{
+  margin: -3rem auto 0;
+}
+.img{  
   display: inline-block; 
   height: inherit;
   width: 100%;
@@ -30,6 +27,9 @@ margin: -2rem auto 0;
  width: 100%;
  margin-bottom: 1rem;
 }
+.question-form input:first-child{
+  margin-top: 1rem;
+}
 .question-form>input{
   padding: 0.5rem;
 }
@@ -43,12 +43,7 @@ span.text-checkbox{
   font-size: 0.7rem;
   line-height: 0.8rem;
 }
-.btn-checkbox{
-  padding: 0.5rem 1rem;
-  font-size: 0.7rem;
-  background-color: var(--color-of-theme);
-  color: var(--white-color);
-}
+
 ::placeholder, input::placeholder{
   font-size: 0.8rem;
   font-family: sans-serif;
