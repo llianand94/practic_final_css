@@ -36,3 +36,9 @@
   background-color: var(--white-color);
   z-index: 2;
 }
+.card-wrapper{
+  /* display: block;
+  margin: 0 auto;  
+   */
+  
+}
