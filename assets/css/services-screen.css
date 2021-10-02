@@ -1,14 +1,14 @@
 .card-wrapper{
+  display: flex;
+  justify-content: center;
   padding: 2rem 0;
+  
 }
 .galery {
-  /* display: flex; */
   background-repeat: no-repeat;
   background-size: cover;
-  /* width: 100%;
-  height: 100%; */
-  margin: 0 auto;
-  padding: 55% 0.5rem 1rem;
+  flex-basis: 220px;
+  padding: 50% 3% 5%;
 }
 .galery *:last-child {
   display: inline-block;
@@ -28,7 +28,7 @@
   display: none;
   background-image: url(./../images/training.jpg);
 }
-.galery-row-buttons{
+.galery-strip-buttons{
  display: flex;
  justify-content: space-between;
  align-content: center;
@@ -36,11 +36,22 @@
  width: 100%;
  height: 0.3rem;
 }
-.row-btn{
+.strip-btn{
   flex-basis: calc(100%/7);
   border: none;
  background-color: var(--color-of-theme);
 }
-.row-btn:not(:first-child){
+.strip-btn:not(:first-child){
   background-color: var(--not-activ-color);
+}
+.toggle-wrapper{
+ display: flex;
+ margin: 1.5rem auto;
+ justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .toggle-wrapper{
+    display: none;
+  }
 }

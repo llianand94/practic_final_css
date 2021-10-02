@@ -1,0 +1,25 @@
+.benefit-screen{
+
+}
+.card-benefit{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+}
+.card-capture-wrapper{
+ display: flex;
+ width: 100%;
+ 
+ 
+ align-items: center;
+ 
+}
+.card-benefit-image{
+ width: 70px;
+}
+.card-benefit-capture{
+ max-width: 55%;
+}
+.card-benefit-about{
+
+}
