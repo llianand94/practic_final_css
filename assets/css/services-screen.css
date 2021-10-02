@@ -1,44 +1,46 @@
-.services-screen button.btn-submit{
-  display: block;
-  width: 80%;
-  margin: 1rem auto 0;  
+.card-wrapper{
+  padding: 2rem 0;
 }
-.bg-image{
-  position: relative;  
-  padding: 4rem 1.5rem 1.5rem;
-  border-radius: var(--border-size);
-  box-shadow: 0px 7px 5px 0px rgba(34, 60, 80, 0.2);
-  background-image: url('./../images/bg-image-hand-pen.jpg.jpg');
+.galery {
+  /* display: flex; */
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: 90%;   
+  /* width: 100%;
+  height: 100%; */
+  margin: 0 auto;
+  padding: 55% 0.5rem 1rem;
 }
-
-.bg-image:after{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: var(--border-size);
-  background-color: var(--color-of-theme);
-  clip-path: polygon(0 0, 35% 0, 65% 100%, 0% 100%);
-  opacity: 0.4;
-  z-index: 1;
-
-}
-.wrapper-text{
+.galery *:last-child {
   display: inline-block;
-  position: relative;
-  padding: 0 1rem 1rem;
-  background-color: var(--white-color);
-  z-index: 2;
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
 }
-.card-wrapper{
-  /* display: block;
-  margin: 0 auto;  
-   */
-  
+.welding {
+  background-image: url(./../images/welding.jpg);
+}
+.building {
+  display: none;
+  background-image: url(./../images/building.jpg);
+}
+.training {
+  display: none;
+  background-image: url(./../images/training.jpg);
+}
+.galery-row-buttons{
+ display: flex;
+ justify-content: space-between;
+ align-content: center;
+ margin: 0 auto;
+ width: 100%;
+ height: 0.3rem;
+}
+.row-btn{
+  flex-basis: calc(100%/7);
+  border: none;
+ background-color: var(--color-of-theme);
+}
+.row-btn:not(:first-child){
+  background-color: var(--not-activ-color);
 }
