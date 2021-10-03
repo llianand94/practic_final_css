@@ -11,10 +11,8 @@ body{
   font-size: var(--font-size) ;
 }
 
-.article-capture{
-  margin: 1rem 0;
-  font-size: 1.3rem;
-  
+.article-capture{  
+  font-size: 1.3rem;  
  }
 
  .article-text{
@@ -34,6 +32,9 @@ body{
   .main-border{
     border: 1px solid #CCCCCC;
     border-radius: var(--border-size);
+  }
+  .margin-Y{
+    margin: 1rem 0;
   }
 
 

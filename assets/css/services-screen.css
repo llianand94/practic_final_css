@@ -1,8 +1,11 @@
+.services-screen{
+  position:relative;
+}
 .card-wrapper{
   display: flex;
+  position:relative;
   justify-content: center;
-  padding: 2rem 0;
-  
+  padding: 2rem 0;  
 }
 .galery {
   background-repeat: no-repeat;
@@ -46,12 +49,20 @@
 }
 .toggle-wrapper{
  display: flex;
- margin: 1.5rem auto;
- justify-content: space-between;
+ margin: 1.5rem auto 0;
+ justify-content: space-between; 
 }
 
 @media screen and (min-width: 768px) {
-  .toggle-wrapper{
-    display: none;
+  
+  .toggle-wrapper a{
+    position: absolute;
+    bottom: 50%;    
+  }
+  .toggle-wrapper a:first-child{
+    left: 1rem;   
+  }
+  .toggle-wrapper a:last-child{
+    right: 1rem;   
   }
 }
