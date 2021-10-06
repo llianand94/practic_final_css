@@ -1,8 +1,11 @@
-.navigation-section{ 
+.navigation-section{
+  position: relative; 
+  padding: 1rem;
   background-color: var(--color-of-theme);
   
-  padding: 1rem;
 }
+
+
 .logo{
   font-size: 1.3rem;
   color: var(--white-color);
@@ -40,4 +43,15 @@
  display: none;
 }
 
-
+@media screen and (min-width: 768px) {
+  .navigation-section::after{ 
+    content: "";  
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5%;
+    padding-bottom: 1px;
+    background-color: #C4C4C4; 
+  }
+  
+}

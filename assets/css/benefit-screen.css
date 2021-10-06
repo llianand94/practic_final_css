@@ -7,9 +7,7 @@
   align-items: center;
 }
 .card-benefit{
- display: flex;
- /* width: 290px; */
- /* flex-basis: 220px; */
+ display: flex; 
  flex-direction: column;
  justify-content: flex-start;
  padding: 0 1rem;
@@ -22,7 +20,7 @@
  margin: 1.2rem 0;
  font-size: 1.2rem; 
  align-items: center;
- }
+}
 .wrap-img{
   width: max-content;
   margin-right: 1rem;
@@ -37,7 +35,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: space-between;
+    align-items: stretch;
   }
   .card-benefit{
     flex-basis: initial;
