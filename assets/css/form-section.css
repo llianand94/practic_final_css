@@ -25,7 +25,7 @@
   width: 100%;
   margin-bottom: 1rem;
 }
-.question-form input:first-child {
+.question-form>input:first-child {
   margin-top: 1rem;
 }
 .question-form > input {
@@ -39,7 +39,7 @@
 span.text-checkbox {
   margin: 0 0.5rem;
   font-size: 0.7rem;
-  line-height: 0.8rem;
+  line-height: 0.7rem;
   color: #a3a3a3;
   font-family: "Gilroy";
   font-weight: 400;
@@ -100,4 +100,9 @@ input::placeholder {
 textarea {
   padding: 0.5rem;
   resize: none;
+}
+@media screen and (min-width: 768px) {  span.text-checkbox{
+  margin-right: auto;
+}
+  
 }

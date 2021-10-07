@@ -3,31 +3,65 @@
 }
 .card-wrapper{
   display: flex;
-  position:relative;
+  position: relative;
   justify-content: center;
-  padding: 2rem 0;  
+  padding: 2rem 0; 
+  
+}
+.card-wrapperh2 .article-capture{
+  font-family: 'Roboto';
+  font-weight: 500;
+   
+}
+.card-wrapper .article-text{
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 0.9rem; 
+}
+.card-wrapper a{
+  
 }
 .galery {
+  display: flex;
+  flex-wrap: wrap;   
   background-repeat: no-repeat;
   background-size: cover;
-  /* flex-basis: 220px; */
-  padding: 16rem 1rem 2rem;
+  flex-basis: 15rem;
+  align-items: flex-end;
+  
+}
+.galery>*{
+ margin-left: 1rem;
+ margin-right: 1rem;
+}
+.galery *:first-child{
+  margin-top: 12rem;
 }
 .galery *:last-child {
   display: inline-block;
   width: 100%;
   margin-top: 2rem;
-  text-align: center;
-  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  text-align: center;  
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 .welding {
+  order: 2;
+  transform: scale(0.95);
   background-image: url(./../images/welding.jpg);
 }
 .building {
+  order: 1;
+  transform: scale(0.85) translate(0px, 10px);
   display: none;
   background-image: url(./../images/building.jpg);
 }
 .training {
+  order: 3;
+  transform: scale(0.85) translate(0px, 10px);
   display: none;
   background-image: url(./../images/training.jpg);
 }
@@ -43,27 +77,48 @@
   flex-basis: calc(100%/7);
   border: none;
  background-color: var(--color-of-theme);
+ cursor: pointer;
 }
 .strip-btn:not(:first-child){
   background-color: var(--not-activ-color);
 }
 .toggle-wrapper{
  display: flex;
+ width: 5rem;
  margin: 1.5rem auto 0;
  justify-content: space-between; 
 }
 
 @media screen and (min-width: 768px) {
-  
+  .galery{
+    flex-basis: auto;
+  }
+  .building {
+    display: flex;    
+  }
+  .training {
+    display: flex;
+  }
   .toggle-wrapper a{
     position: absolute;
-    bottom: 50%;    
+    bottom:40%;
+    cursor: pointer;    
   }
   .toggle-wrapper a:first-child{
-    left: 1rem;   
+    left: -1rem;   
   }
   .toggle-wrapper a:last-child{
-    right: 1rem;   
+    right: -1rem;   
   }
-  
+}
+@media screen and (min-width: 1024px) {
+  .galery{
+    margin: 0 1rem;
+  }
+  .toggle-wrapper a:first-child{
+    left: 4rem;   
+  }
+  .toggle-wrapper a:last-child{
+    right: 4rem;   
+  }
 }

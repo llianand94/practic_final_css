@@ -3,7 +3,7 @@
   --count-column: 12;
 }
 .container{
-  --padding-value: calc(var(--space-size)/2);
+  --padding-value: calc(var(--space-size)/4);
 
   width:100%;
   padding-left: var(--padding-value);

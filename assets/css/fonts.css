@@ -43,3 +43,15 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Regular'), local('Roboto-Regular')
+    url(./../fonts/Roboto/Roboto-Regular.ttf) format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Medium'), local('Roboto-Medium') 
+    url(./../fonts/Roboto/Roboto-Medium.ttf) format('opentype');
+  font-weight: 500;
+}
