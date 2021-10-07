@@ -93,16 +93,21 @@ span.text-checkbox {
 
 ::placeholder,
 input::placeholder {
+  max-width: 200px;
   font-size: 0.8rem;
   font-family: sans-serif;
   color: #c2c2c2;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 textarea {
   padding: 0.5rem;
   resize: none;
 }
-@media screen and (min-width: 768px) {  span.text-checkbox{
-  margin-right: auto;
-}
+@media screen and (min-width: 768px) {  
+    span.text-checkbox{
+    margin-right: auto;
+  }
   
 }

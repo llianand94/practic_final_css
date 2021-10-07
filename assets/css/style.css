@@ -52,7 +52,11 @@ body{
 .box-shadow{
   box-shadow: 0px 0px 6px 0px rgba(34, 60, 80, 0.3);
 }
-
+.text-overflow{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 /* чтобы текст небыл более 2х строк */
 .row-overflow{
   max-height: calc(1.5rem*2);

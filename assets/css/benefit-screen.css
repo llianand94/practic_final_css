@@ -55,8 +55,17 @@
   }
   .card-benefit {
     flex-basis: initial;
-    
     min-height: 200px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .benefit-wrapper-card{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .card-benefit+.card-benefit{
+    margin-left: 1.2rem;
   }
 }
   
