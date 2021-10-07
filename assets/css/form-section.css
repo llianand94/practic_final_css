@@ -1,18 +1,16 @@
-
-.wrapper-img{  
-  width: 100%;   
+.wrapper-img {
+  width: 100%;
 }
-.inner-img{
-  --height-divine-by-width: 1.2791; 
-padding-top: calc(var(--height-divine-by-width)*100%);
-position: relative;
-
+.inner-img {
+  --height-divine-by-width: 1.2791;
+  padding-top: calc(var(--height-divine-by-width) * 100%);
+  position: relative;
 }
-.to-upp-img{
+.to-upp-img {
   margin: -3rem auto 0;
 }
-.img{  
-  display: inline-block; 
+.img {
+  display: inline-block;
   height: inherit;
   width: 100%;
   object-fit: cover;
@@ -22,47 +20,56 @@ position: relative;
   bottom: 0;
   right: 0;
   left: 0;
-} 
-.question-form>*{
- width: 100%;
- margin-bottom: 1rem;
 }
-.question-form input:first-child{
+.question-form > * {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.question-form input:first-child {
   margin-top: 1rem;
 }
-.question-form>input{
+.question-form > input {
   padding: 0.5rem;
 }
 
-.submit-question-wrapper{
-display: flex;
-align-items: center;
+.submit-question-wrapper {
+  display: flex;
+  align-items: center;
 }
-span.text-checkbox{
+span.text-checkbox {
   margin: 0 0.5rem;
   font-size: 0.7rem;
   line-height: 0.8rem;
+  color: #a3a3a3;
+  font-family: "Gilroy";
+  font-weight: 400;
 }
-.bg-image .btn-submit{
+.btn-submit {
+  padding: 0.5rem 1rem;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 0.8rem;
+  background-color: var(--color-of-theme);
+}
+.bg-image .btn-submit {
   display: block;
   width: 80%;
-  margin: 1rem auto 0;  
+  margin: 1rem auto 0;
   text-align: center;
-  /* font-size: 0.9rem; */
 }
-.bg-image{
+.bg-image {
   position: relative;
-  margin: 0 auto;  
+  margin: 0 auto;
   padding: 4rem 1.5rem 1.5rem;
   border-radius: var(--border-size);
   box-shadow: 0px 7px 5px 0px rgba(34, 60, 80, 0.2);
-  background-image: url('./../images/bg-image-hand-pen.jpg.jpg');
+  background-image: url("./../images/bg-image-hand-pen.jpg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: 90%;   
+  background-position-x: 90%;
 }
 
-.bg-image:after{
+.bg-image:after {
   content: "";
   display: block;
   position: absolute;
@@ -75,9 +82,8 @@ span.text-checkbox{
   clip-path: polygon(0 0, 35% 0, 65% 100%, 0% 100%);
   opacity: 0.4;
   z-index: 1;
-
 }
-.wrapper-text{
+.wrapper-text {
   display: inline-block;
   position: relative;
   padding: 0 1rem 1rem;
@@ -85,12 +91,13 @@ span.text-checkbox{
   z-index: 2;
 }
 
-::placeholder, input::placeholder{
+::placeholder,
+input::placeholder {
   font-size: 0.8rem;
   font-family: sans-serif;
-  color: #C2C2C2;
+  color: #c2c2c2;
 }
-textarea{
+textarea {
   padding: 0.5rem;
   resize: none;
 }

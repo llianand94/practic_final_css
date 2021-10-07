@@ -4,8 +4,11 @@
   padding: 1rem;
 }
 .logo{
-  font-size: 1.3rem;
+  
   color: var(--white-color);
+  font-size: 1.3rem;
+  font-family: 'Gilroy';
+  font-weight: 700;
 }
 .nav-btn-wrapper{
   display: flex;    

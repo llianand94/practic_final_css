@@ -10,8 +10,8 @@
 .galery {
   background-repeat: no-repeat;
   background-size: cover;
-  flex-basis: 220px;
-  padding: 50% 3% 5%;
+  /* flex-basis: 220px; */
+  padding: 16rem 1rem 2rem;
 }
 .galery *:last-child {
   display: inline-block;
