@@ -1,0 +1,15 @@
+.help-section{
+
+}
+.help-section-list{
+
+}
+.help-section-list>*{
+  
+  list-style-image: url(./../images/Ellipse\ 133.png);
+  list-style-type: disc;
+}
+.bottom-border{
+  border: none;
+  border-bottom: 1px solid black;
+}
