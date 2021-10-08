@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/navigation-section.css">
   <link rel="stylesheet" href="./assets/css/form-section.css">
-  <link rel="stylesheet" href="./assets/css/services-screen.css">
-  <link rel="stylesheet" href="./assets/css/benefit-screen.css">
+  <link rel="stylesheet" href="./assets/css/services-section.css">
+  <link rel="stylesheet" href="./assets/css/benefit-section.css">
   <link rel="stylesheet" href="./assets/css/help-section.css">
   
 </head>
@@ -40,17 +40,12 @@
     </nav>
   </header>
   <section class="form-section container">
-    <article class="col-12">
+    <article class="col-12 col-md-6">
       
         <h1 class="article-capture margin-Y theme-color-font">задайте вопрос юристу онлайн</h1>
         <p class="article-text">Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании</p>
     </article>
-      <!-- <div class="wrapper-img">
-        <div class="inner-img to-upp-img">
-          <img src="./assets/images/main-theme-image.png" alt="main image" class="img">
-        </div>
-      </div> -->
-    <div class="col-12">
+    <div class="col-12 col-md-6">
       <form class="question-form" action="#" method="GET">
 
         <input class="main-border box-shadow" type="text" name="user-info" placeholder="Введите номер Вашего телефона" required>
@@ -74,7 +69,7 @@
     </div> 
   </section> 
 
-  <section class="services-screen container">
+  <section class="services-section container">
       
     <article class=" col-12">
       <h2 class="article-capture margin-Y aling-center theme-color-font">предоставляемые услуги</h2>
@@ -120,7 +115,7 @@
   </div>
 
   </section>
-  <section class="container benefit-screen"> 
+  <section class="container benefit-section"> 
     <article class="aling-center margin-Y">
       <h2 class="article-capture  margin-Y theme-color-font">Наши преимущества</h2>
       <p class="article-text">Команда опытных юристов</p>
@@ -167,20 +162,35 @@
       </article>
     </div>
   </section>
-  <section class="container help-section">
-    <article>
+  <section class="help-section container margin-Y">
+    <article class='col-12 col-md-5 col-lg-4'>
       <h2 class="article-capture margin-Y "><span class="theme-color-font">Юридическая помощь </span>начинается с консультации</h2>
-      <ul class="help-section-list">
-        <li>Заполните форму заявки, чтобы получить первую бесплатную консультацию по Вашей ситуации</li>
-        <li>Наш менеджер свяжется с Вами в ближайшее время</li>
+      <ul class="help-section-list article-text">
+        <li class="margin-Y">Заполните форму заявки, чтобы получить первую бесплатную консультацию по Вашей ситуации</li>
+        <li class="margin-Y">Наш менеджер свяжется с Вами в ближайшее время</li>
       </ul>
     </article>
-    <form class="help-section-form" action="#" method="GET" >
-      <input class="bottom-border" type="text" placeholder="Кристи">
-      <input class="bottom-border" type="number" placeholder="+7(___)___-__-__" pattern="">
-      <input class="btn-submit main-border white-font" type="submit" value="Получить консультацию">
-      <p>Нажимая на кнопку, Вы даете согласие на обработку <a href="#">персональных данных</a></p>
+    <form class="help-section-form col-7 col-md-4 col-lg-3" action="#" method="GET" >
+      <span class="input-description margin-Y">Введите Ваше имя</span>
+      <input class="bottom-border " 
+                type="text" placeholder="Кристи">
+      <span class="input-description margin-Y">Введите номер телефона</span>
+      <input class="bottom-border " 
+                type="text" placeholder="+7(___)___-__-__" pattern="">
+      <input class="btn-submit main-border white-font margin-Y" 
+              type="submit" value="Получить консультацию">
+      <p class="agree-text">Нажимая на кнопку, Вы даете согласие на обработку <a class="agree-link" href="#">персональных данных</a></p>
     </form>
+    <div class="phone-img-wrapper col-5 col-md-3 col-lg-3">
+      <img src="./assets/images/iPhone-X-Mockup.png" alt="iPhone-X-Mockup">
+      
+    </div>
+  </section>
+  <section class="rewiews-section container">
+    <article class="aling-center margin-Y">
+      <h2 class="article-capture aling-center margin-Y theme-color-font">Отзывы</h2>
+      <p class="article-text">За долгое время работы, мы собрали десятки отзывов, которые помогут сформировать мнение о нашей работе</p>
+    </article>
   </section>
 
 </body>

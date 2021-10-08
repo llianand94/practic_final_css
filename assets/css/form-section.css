@@ -1,32 +1,14 @@
 .form-section{
   background-image: url(./../images/main-theme-image.png);
   background-repeat: no-repeat;
-  /* background-attachment: local; */
-  background-size: cover;
+  background-size: 15rem;
+  background-position-x: center;
+  background-position-y: 28%;
 }
-/* .wrapper-img {
-  width: 100%;
+
+.question-form{
+  margin-top: 16rem;
 }
-.inner-img {
-  --height-divine-by-width: 1.2791;
-  padding-top: calc(var(--height-divine-by-width) * 100%);
-  position: relative;
-}
-.to-upp-img {
-  margin: -3rem auto 0;
-}
-.img {
-  display: inline-block;
-  height: inherit;
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-} */
 .question-form > * {
   width: 100%;
   margin-bottom: 1rem;
@@ -97,8 +79,8 @@ span.text-checkbox {
   z-index: 2;
 }
 
-::placeholder,
-input::placeholder {
+.question-form *::placeholder,
+textarea::placeholder {
   max-width: 200px;
   font-size: 0.8rem;
   font-family: sans-serif;
@@ -111,9 +93,42 @@ textarea {
   padding: 0.5rem;
   resize: none;
 }
-@media screen and (min-width: 768px) {  
-    span.text-checkbox{
-    margin-right: auto;
+@media screen and (min-width: 460px) { 
+  .form-section{
+    margin: 0 auto;
+    background-position-y: 22%;
   }
-  
+  .question-form {
+    margin-top: 17rem;
+}
+}
+
+@media screen and (min-width: 768px) {
+  .form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 2rem auto;
+    background-position-x: 0rem;
+    background-position-y: -3rem;
+    background-size: 21rem;
+  }
+  .question-form {
+    margin-top: 1rem;
+}
+  span.text-checkbox{
+    margin-right: auto;
+  }  
+}
+@media screen and (min-width: 992px) {
+  .form-section{
+    background-position-x: 3rem;
+    background-position-y: -5rem;
+    background-size: 22rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .form-section{
+    margin-top: 4rem;
+  }
 }

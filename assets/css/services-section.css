@@ -1,4 +1,4 @@
-.services-screen{
+.services-section{
   position:relative;
 }
 .card-wrapper{
@@ -109,14 +109,17 @@
     right: -1rem;   
   }
 }
-@media screen and (min-width: 1024px) {
-  .galery{
-    margin: 0 1rem;
-  }
+@media screen and (min-width:992px) {
   .toggle-wrapper a:first-child{
     left: 4rem;   
   }
   .toggle-wrapper a:last-child{
     right: 4rem;   
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .galery{
+    margin: 0 1rem;
+  }  
 }

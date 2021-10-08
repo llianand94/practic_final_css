@@ -1,15 +1,98 @@
 .help-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0 auto;
+  font-family: 'Gilroy';
+} 
 
-}
-.help-section-list{
-
-}
 .help-section-list>*{
-  
-  list-style-image: url(./../images/Ellipse\ 133.png);
+  margin-left: 2rem;
+  list-style-position: outside;
+  list-style-image: url(./../images/li-marker-ring.png);
   list-style-type: disc;
+  font-weight: 500; 
+  
+}
+.help-section-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    
+}
+.input-description{
+color: #A9A9A9;
+font-family: 'Gilroy';
+  font-weight: 500;
+}
+
+.help-section-form input:not(:last-child){
+  padding-bottom: 0.5rem;
+  background-image: url();
+  font-family: 'Gilroy';
+  font-weight: 400;
+}
+input::placeholder{
+  padding-left: 2rem;  
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.help-section-form .btn-submit{
+  max-width: 12rem;
+  align-self: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.agree-text{
+  text-align: center;
+color: #A9A9A9;
+font-size: 0.6rem;
+}
+.agree-link{
+  text-decoration: underline;
+  color: #414141;
+}
+.phone-img-wrapper{
+  height: 100%;
+}
+.phone-img-wrapper img{
+  display: block;
+  margin-right: 1rem;
+  margin-left: auto;  
+  object-fit: cover;
 }
 .bottom-border{
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #414141;
+}
+@media screen and (min-width:768px) {
+  .help-section{
+    margin-top: 2rem;
+  }
+  .help-section-form{
+    margin-top: 0;
+    order: 1;
+  }
+  .help-section-list>*{
+    line-height: 1.2rem;
+  }
+  .phone-img-wrapper img{
+    display: block;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+}
+@media screen and (min-width:992px) {
+  .help-section{
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .phone-img-wrapper img{
+    transform: scale(1.3);
+  }
 }
