@@ -7,7 +7,24 @@
   background-position-x: center;
   background-position-y: 28%;
 }
-
+.form-article{
+  width: 17rem;
+}
+.after-element {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 3px solid var(--white-color);
+  background-color: var(--color-of-theme);
+}
+.after-element > * {
+  display: block;
+  margin: 0.3rem auto;
+  text-align: center;
+  color: var(--white-color);
+  font-size: 0.6rem;
+}
 .question-form{
   margin-top: 16rem;
 }
@@ -38,6 +55,9 @@
   display: flex;
   align-items: center;
 }
+.submit-question-wrapper .btn-submit{
+  margin-left: auto;
+}
 span.text-checkbox {
   margin: 0 0.5rem;
   font-size: 0.7rem;
@@ -52,6 +72,9 @@ span.text-checkbox {
   font-weight: 600;
   font-size: 0.8rem;
   background-color: var(--color-of-theme);
+}
+.checkbox{
+  
 }
 .bg-image .btn-submit {
   display: block;
@@ -98,6 +121,7 @@ span.text-checkbox {
 }
 
 
+
 @media screen and (min-width: 460px) { 
   .form-section{
     margin: 0 auto;
@@ -118,12 +142,22 @@ span.text-checkbox {
     background-position-y: -3rem;
     background-size: 21rem;
   }
+  .form-article{
+    position: relative;
+    width: 70%;
+  }
   .question-form {
     margin-top: 1rem;
 }
   span.text-checkbox{
     margin-right: auto;
-  }  
+  }
+  .after-element {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 12%;
+  } 
 }
 @media screen and (min-width: 992px) {
   .form-section{
@@ -136,6 +170,16 @@ span.text-checkbox {
   .form-section{
     margin-top: 4rem;
   }
+  .form-article{
+    width: 100%;
+  }
+  .form-text{
+    width: 80%;
+  }
+  .after-element {
+    right: 5%;
+    top: 23%;
+  } 
 }
 @media screen and (min-width: 1200px) {
   .form-section {
