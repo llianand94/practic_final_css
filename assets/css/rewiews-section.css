@@ -15,7 +15,6 @@
 .user-rewiew-card+.user-rewiew-card{
   display: none;
 }
-
 .star{
   display: inline-block;
   line-height: 1rem;
@@ -31,11 +30,9 @@
 
 .user-img-wrapper{
  display: flex;
-
 }
 .user-info{
   margin-left: 1rem;
-
 }
 .user-name{
   font-family: 'Trajan Pro 3';
@@ -52,52 +49,24 @@
   }
   .card-wrapper{
     justify-content: center;
-  }
-  
+  }  
   .user-rewiew-card{
     padding: 1.5rem 2.5rem;
   }
-
   .rewiews-section .toggle-wrapper {
   width: 0;
   margin: 0;
   }
   .rewiews-section .toggle-wrapper a:first-child{
-    bottom: 8rem;
-  left: 2.5rem;   
+    bottom: 35%;
+    left: 7%;   
   }
   .rewiews-section .toggle-wrapper a:last-child{
-    bottom: 8rem;
-    right: 2.5rem;  
+    bottom: 35%;
+    right: 7%;  
   }
   .user-rewiew-card+.user-rewiew-card{
     display: block;
     margin-left: 1.5rem;
   }
-}
-@media screen and (min-width: 980px) {
-   .rewiews-section .toggle-wrapper a:first-child{
-    bottom: 7rem;
-    left: 3.5rem;   
-    }
-    .rewiews-section .toggle-wrapper a:last-child{
-      bottom: 7rem;
-    right: 3.5rem;   
-    } 
-}
-@media screen and (min-width: 1190px) {
-  .rewiews-section .toggle-wrapper a:first-child{
-    left: 4.5rem;   
-    }
-    .rewiews-section .toggle-wrapper a:last-child{
-    right: 4.5rem;   
-    } 
-}
-@media screen and (min-width: 1385px) {
-  .rewiews-section .toggle-wrapper a:first-child{
-    left: 5.5rem;   
-    }
-    .rewiews-section .toggle-wrapper a:last-child{
-      right: 5.5rem;   
-    } 
 }

@@ -80,6 +80,7 @@
     background-color: #C4C4C4;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .nav-btn-wrapper{
     display: none;
