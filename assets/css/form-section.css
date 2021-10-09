@@ -1,4 +1,6 @@
 .form-section{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   background-image: url(./../images/main-theme-image.png);
   background-repeat: no-repeat;
   background-size: 15rem;
@@ -56,6 +58,10 @@ span.text-checkbox {
   width: 80%;
   margin: 1rem auto 0;
   text-align: center;
+}
+.bg-wrapper{
+  padding-right: 1rem;
+  padding-left: 1.5rem;
 }
 .bg-image {
   position: relative;

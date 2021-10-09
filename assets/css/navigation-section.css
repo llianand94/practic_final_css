@@ -1,5 +1,8 @@
 .navigation-section{ 
   position: relative;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  margin-top: 0.2rem;
   padding: 1rem;
   background-color: var(--color-of-theme);
   font-family: 'Gilroy';
