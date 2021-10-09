@@ -90,6 +90,7 @@ font-size: 0.6rem;
   .help-section{
     justify-content: center;
     margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .phone-img-wrapper img{

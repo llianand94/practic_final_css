@@ -13,11 +13,23 @@
   width: 100%;
   margin-bottom: 1rem;
 }
-.question-form>input:first-child {
-  margin-top: 1rem;
+
+.question-form *::placeholder {
+  max-width: 200px;
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  color: #c2c2c2;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.question-form > input {
-  padding: 0.5rem;
+.question-form > input,
+.question-form > textarea{
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  resize: none;
 }
 
 .submit-question-wrapper {
@@ -79,20 +91,7 @@ span.text-checkbox {
   z-index: 2;
 }
 
-.question-form *::placeholder,
-textarea::placeholder {
-  max-width: 200px;
-  font-size: 0.8rem;
-  font-family: sans-serif;
-  color: #c2c2c2;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-textarea {
-  padding: 0.5rem;
-  resize: none;
-}
+
 @media screen and (min-width: 460px) { 
   .form-section{
     margin: 0 auto;
@@ -100,7 +99,7 @@ textarea {
   }
   .question-form {
     margin-top: 17rem;
-}
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -131,4 +130,12 @@ textarea {
   .form-section{
     margin-top: 4rem;
   }
+}
+@media screen and (min-width: 1200px) {
+  .form-section {
+    background-position-y: -6rem;
+  }
+}
+@media screen and (min-width: 1336px) {
+
 }

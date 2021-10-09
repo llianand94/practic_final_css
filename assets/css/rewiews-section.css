@@ -1,0 +1,75 @@
+.rewiews-section{
+  position: relative;
+  /* margin: 0 auto; */
+}
+.card-wrapper{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  
+  
+}
+.user-rewiew-card{
+  
+  padding: 1.5rem 1rem;
+  border: none;
+  box-shadow: 0px 0px 10px 2px rgba(155, 155, 155, 0.2) inset;
+}
+.user-rewiew-card+.user-rewiew-card{
+  display: none;
+}
+.star-wrapper{
+  width: 50%;
+  
+
+}
+.star{
+  display: inline-block;
+  line-height: 1rem;
+  vertical-align: middle;
+  width: 1rem;
+  height: 1rem;
+background-image: url(./../images/star.png);
+background-repeat: no-repeat;
+}
+.star+.star{
+  margin-left: 0.2rem;
+}
+.rewiew-text{
+ 
+}
+.user-img-wrapper{
+ display: flex;
+
+}
+.user-info{
+  margin-left: 1rem;
+
+}
+.user-name{
+  font-family: 'Trajan Pro 3';
+  font-weight: 500;
+}
+.user-company{
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+@media screen and (min-width: 768px) {
+  .card-wrapper{
+    justify-content: space-around;
+  }
+  .rewiews-section .toggle-wrapper {
+  width: 0;
+  margin: 0;
+  }
+  .rewiews-section .toggle-wrapper a:first-child{
+  left: -0.5rem;   
+  }
+  .rewiews-section .toggle-wrapper a:last-child{
+  right: -0.5rem;   
+  }
+  .user-rewiew-card+.user-rewiew-card{
+    display: block;
+  }
+}
