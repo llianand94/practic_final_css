@@ -33,21 +33,23 @@
   margin-bottom: 1rem;
 }
 
-.question-form *::placeholder {
-  max-width: 200px;
-  font-size: 0.8rem;
-  font-family: sans-serif;
+
+.question-form > input {
+  padding: 0.5rem;
+}
+
+::placeholder,
+input::placeholder {
   color: #c2c2c2;
-  text-align: left;
+  font-size: 0.8rem;
+  font-family: 'Gilroy';
+  font-weight: 500;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.question-form > input,
-.question-form > textarea{
-  padding-top: 0.5rem;
-  padding-left: 1rem;
-  padding-bottom: 0.5rem;
+textarea {
+  padding: 0.5rem;
   resize: none;
 }
 
@@ -73,9 +75,7 @@ span.text-checkbox {
   font-size: 0.8rem;
   background-color: var(--color-of-theme);
 }
-.checkbox{
-  
-}
+
 .bg-image .btn-submit {
   display: block;
   width: 80%;

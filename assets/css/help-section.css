@@ -43,7 +43,7 @@ font-family: 'Gilroy';
   font-family: 'Gilroy';
   font-weight: 400;
 }
-input::placeholder{
+.help-section-form input::placeholder{
   padding-left: 2rem;  
   overflow: hidden;
   white-space: nowrap;
