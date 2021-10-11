@@ -68,5 +68,14 @@
   .card-benefit+.card-benefit{
     margin-left: 1.2rem;
   }
+  .card-benefit-capture{
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+  }
+  .card-benefit-about{
+    line-height: 1.1rem;
+    font-size: 1rem;
+  }
 }
+
   

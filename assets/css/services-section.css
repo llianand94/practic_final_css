@@ -10,15 +10,18 @@
   padding: 2rem 0; 
   
 }
-.card-wrapperh2 .article-capture{
+.service-capture{  
   font-family: 'Roboto';
   font-weight: 500;
-   
+  font-size: 1.5rem;  
+  line-height: 1.8rem;  
 }
-.card-wrapper .article-text{
+
+.service-text{
   font-family: 'Roboto';
   font-weight: 400;
-  font-size: 0.9rem; 
+  font-size: 0.9rem;
+  line-height: 1rem;    
 }
 
 .galery {
@@ -124,4 +127,21 @@
   .galery{
     margin: 0 1rem;
   }  
+  .service-capture{
+    font-size: 1.8rem;
+  }
+  .service-text{
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .service-capture{
+    font-size: 2.2rem;
+    line-height: 2rem;
+  }
+  .service-text{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
 }

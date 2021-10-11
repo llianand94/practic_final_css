@@ -1,4 +1,4 @@
-.form-section{
+.form-section {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   background-image: url(./../images/main-theme-image.png);
@@ -7,7 +7,7 @@
   background-position-x: center;
   background-position-y: 28%;
 }
-.form-article{
+.form-article {
   width: 17rem;
 }
 .after-element {
@@ -25,14 +25,13 @@
   color: var(--white-color);
   font-size: 0.6rem;
 }
-.question-form{
+.question-form {
   margin-top: 16rem;
 }
 .question-form > * {
   width: 100%;
   margin-bottom: 1rem;
 }
-
 
 .question-form > input {
   padding: 0.5rem;
@@ -42,7 +41,7 @@
 input::placeholder {
   color: #c2c2c2;
   font-size: 0.8rem;
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-weight: 500;
   overflow: hidden;
   white-space: nowrap;
@@ -57,10 +56,10 @@ textarea {
   display: flex;
   align-items: center;
 }
-.submit-question-wrapper .btn-submit{
+.submit-question-wrapper .btn-submit {
   margin-left: auto;
 }
-span.text-checkbox {
+.text-checkbox {
   margin: 0 0.5rem;
   font-size: 0.7rem;
   line-height: 0.7rem;
@@ -82,7 +81,7 @@ span.text-checkbox {
   margin: 1rem auto 0;
   text-align: center;
 }
-.bg-wrapper{
+.bg-wrapper {
   padding-right: 1rem;
   padding-left: 1.5rem;
 }
@@ -120,10 +119,8 @@ span.text-checkbox {
   z-index: 2;
 }
 
-
-
-@media screen and (min-width: 460px) { 
-  .form-section{
+@media screen and (min-width: 460px) {
+  .form-section {
     margin: 0 auto;
     background-position-y: 22%;
   }
@@ -133,7 +130,7 @@ span.text-checkbox {
 }
 
 @media screen and (min-width: 768px) {
-  .form-section{
+  .form-section {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -142,14 +139,14 @@ span.text-checkbox {
     background-position-y: -3rem;
     background-size: 21rem;
   }
-  .form-article{
+  .form-article {
     position: relative;
     width: 70%;
   }
   .question-form {
     margin-top: 1rem;
-}
-  span.text-checkbox{
+  }
+  span.text-checkbox {
     margin-right: auto;
   }
   .after-element {
@@ -157,29 +154,54 @@ span.text-checkbox {
     position: absolute;
     right: 5%;
     top: 12%;
-  } 
+  }
 }
 @media screen and (min-width: 992px) {
-  .form-section{
+  .form-section {
     background-position-x: 3rem;
     background-position-y: -5rem;
     background-size: 22rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .form-section{
+  .form-section {
     margin-top: 6rem;
   }
-  .form-article{
-    width: 100%;
+  .article-capture{
+    font-size: 1.6rem;
   }
-  .form-text{
+  .form-article {
+    width: 100%;    
+  }
+  .form-text {
     width: 80%;
+  }
+  .submit-question-wrapper {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .text-checkbox {
+    width: 90%;
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+  .submit-question-wrapper .btn-submit,
+  .bg-image .btn-submit {
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 1rem;
+    padding: 0.8rem 1.1rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
   }
   .after-element {
     right: 3%;
     top: 26%;
-  } 
+  }
+  .bg-image{
+    margin-bottom: 3rem;
+  }
+  
 }
 @media screen and (min-width: 1200px) {
   .form-section {
@@ -187,5 +209,26 @@ span.text-checkbox {
   }
 }
 @media screen and (min-width: 1336px) {
-
+  .article-capture{
+    font-size: 2rem;
+  }
+  .article-text{
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }  
+  
+  ::placeholder,
+  input::placeholder {
+    font-size: 1rem;
+  }
+  .text-checkbox {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .submit-question-wrapper .btn-submit,
+  .bg-image .btn-submit {
+    padding: 1rem 1.3rem;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 }
