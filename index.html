@@ -40,16 +40,24 @@
       </ul>
       <ul class="added-list-wrapper uppercase">
         <li class="added-list-item">
-          <a href="#">Компания <span class="arrow"></span></a>
+          <a href="#">Компания <span class="arrow-down"></span></a>
           </li>
         <li class="added-list-item">
-          <a href="#">Каталог<span class="arrow"></span></a><ul class="inner-list">
-            <li class="inner-li">Оконные системы</li>
-            <li class="inner-li">Фассадные системы</li>
-            <li class="inner-li">Уличная мебель</li>
-            <li class="inner-li">Мильтимедиа проекторы</li>
-            <li class="inner-li">Цветные МФУ</li>
-            <li class="inner-li">Измерительное оборудование</li>
+          <a href="#">Каталог<span class="arrow-down"></span></a>
+          <ul class="inner-list show-bottom">
+            <li class="inner-li arrow-right">Оконные системы</li>
+            <li class="inner-li arrow-right">Фассадные системы
+              <ul class="inner-list show-right">
+                <li class="inner-li">Структурный фасад</li>
+                <li class="inner-li">Полуструктурый "горизонтальная линия"</li>
+                <li class="inner-li">Цветные МФУ</li>
+                <li class="inner-li">Измерительное оборудование</li>
+              </ul>
+            </li>
+            <li class="inner-li arrow-right">Уличная мебель</li>
+            <li class="inner-li arrow-right">Мильтимедиа проекторы</li>
+            <li class="inner-li arrow-right">Цветные МФУ</li>
+            <li class="inner-li arrow-right">Измерительное оборудование</li>
           
           </ul>
         </li>
@@ -273,8 +281,7 @@
   </section>
 <section>
   <footer class="footer white-font">
-    <!-- <div class=""> -->
-      <ul class="footer-list-wrapper uppercase col-12 col-md-5">
+      <ul class="footer-list-wrapper uppercase col-12 col-md-5 col-lg-8">
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Прайс лист</a></li>
         <li><a href="#">Компания</a></li>
@@ -282,10 +289,9 @@
         <li><a href="#">Услуги</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-    <!-- </div> -->
     <div class="call-info col-7 col-md-4">
-      <a href="#" class="">+7 (000) <span class="white-font">000-00-00</span></a>
-      <a href="#" class="">info@classica-prava</a>
+      <span class="">+7 (000) <i class="white-font">000-00-00</i></span>
+      <a href="#">info@classica-prava</a>
     </div>
     <div class="messangers-wrapper col-5 col-md-4">
       <a class="img-youtube" href="#"></a>
@@ -293,7 +299,7 @@
       <a class="img-instagram" href="#"></a>
     </div>
     <a class="company-name col-12 col-md-4" href="#">г.Красноярск ООО"Классика Права"</a>
-    <a class="copy-rights col-12 col-md-4" href="#">2021 Все права защищены</a>
+    <span class="copy-rights col-12 col-md-4">2021 Все права защищены</span>
   </footer>
 </section>
 </body>

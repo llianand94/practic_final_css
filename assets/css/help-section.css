@@ -39,12 +39,11 @@ font-family: 'Gilroy';
 }
 .help-section-form input:not(:last-child){
   padding-bottom: 0.5rem;
-  background-image: url();
+  padding-left: 2rem;
   font-family: 'Gilroy';
   font-weight: 400;
 }
 .help-section-form input::placeholder{
-  padding-left: 2rem;  
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

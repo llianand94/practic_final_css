@@ -168,7 +168,7 @@ span.text-checkbox {
 }
 @media screen and (min-width: 1024px) {
   .form-section{
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
   .form-article{
     width: 100%;
@@ -177,8 +177,8 @@ span.text-checkbox {
     width: 80%;
   }
   .after-element {
-    right: 5%;
-    top: 23%;
+    right: 3%;
+    top: 26%;
   } 
 }
 @media screen and (min-width: 1200px) {

@@ -64,9 +64,14 @@
   .footer{
     flex-flow: column wrap;
     justify-content: flex-start;
-    height: 15rem;
+    align-content: space-around;
+    height: 13rem;
     
   }
+  .footer-list-wrapper>li{
+    padding-left: 0.5rem;
+  }
+  
 .copy-rights{
   margin-top: 2rem;
   margin-left: 1rem;
@@ -89,9 +94,37 @@
   padding-top: 2.5rem;
   order: 2;
 }
-  
+.bg-footer-phone{
+  background-image: url(./../images/input-phone.png);
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+}  
+.bg-footer-msg{
+  background-image: url(./../images/input-phone.png);
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
 }
+
 @media screen and (min-width: 1024px) {
-  
-  
+  .fooret{
+    height: 10rem;
+  }
+  .footer-list-wrapper>li{
+    width: 33%;
+    margin-top: 2rem;
+    padding-left: 0;
+    
+  }
+  .footer-list-wrapper>li:nth-child(4){
+    order: 2;
+  }
+  .footer-list-wrapper>li:nth-child(3){
+    order: 1;
+  }
+  .footer-list-wrapper>li:nth-child(6){
+    order: 3;
+  }
+  .company-name{
+    padding-top: 1.5rem;
+  }
 }

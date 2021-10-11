@@ -42,6 +42,7 @@
 }
 .nav-list {
   display: none;
+  margin-right: 1rem;
   font-weight: 600;
 }
 .nav-item + .nav-item {
@@ -68,6 +69,7 @@
   font-size: 0.8rem;
 }
 .added-list-wrapper {
+  display: none;
   font-size: 0;
   justify-content: space-around;
   align-items: center;
@@ -82,24 +84,21 @@
   position: relative;
   font-size: 1rem;
   padding: 0;
-  margin: 0; 
-   
-  color: #414141;
+  margin: 0;  
   text-align: center;
-  font-weight: 700;  
-  background-color: burlywood;
+  font-weight: 700;
+  color: #414141;
 }
 .added-list-item:last-child {
   display: inline-block;
-   
 }
-.added-list-item a{
-  padding: 0.5rem 1.5rem;
-  display: inline-block;  
- 
+.added-list-item a {
+  padding: 0.8rem 1.5rem;
+  display: inline-block;
+
   /* background-color: blue; */
 }
-.arrow {
+.arrow-down{
   display: inline-block;
   width: 1rem;
   height: 1rem;
@@ -110,20 +109,55 @@
   background-position-y: 0.3rem;
   cursor: pointer;
 }
-.inner-list{
+.show-bottom{  
+  left: 0;
+  top: 100%;
+}
+.show-right{
+  left:100%;
+  top: 0;
+}
+.inner-list {
   display: none;
+  position: absolute;
+  border-radius: 0.5rem;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: initial;
+  background-color: var(--color-of-theme);
+  z-index: 1;   
+}
+
+.inner-li {
+  position: relative;
+  width: 15rem;
+  padding: 0.6rem;
+  padding-left: 1rem;  
+  color: var(--white-color);
+  cursor: pointer;
+  order: 4;
+}
+.inner-li:not(:last-child) {
+  border-bottom: 1px solid var(--white-color);
+}
+
+.arrow-right{  
+  background-image: url(./../images/arrow-right.png);
+  background-repeat: no-repeat;  
+  background-size: inherit;
+  background-position-y: center;
+  background-position-x: 95%;
   
 }
-.inner-li{
-
-}
 .find-item {
-  /* display: block; */
-  width: 1.5rem;
-  height: 1.5rem;
+    width: 1.5rem;
+  height: 2.5rem;
   background-image: url(./../images/find-img.png);
   background-repeat: no-repeat;
   background-size: 1.5rem;
+  background-position-y: center;
+  background-position-x: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -148,9 +182,14 @@
   .added-list-wrapper {
     display: flex;
   }
-  .added-list-item:hover .inner-list{
+  .added-list-item:hover{
+  border: 2px solid var(--color-of-theme); 
+  border-radius: 0.5rem; 
+  }
+  .added-list-item:hover .show-bottom {
     display: inline-block;
-    position: absolute;
-    left: 0;
+  }
+  .inner-li:hover .show-right {
+    display: inline-block;
   }
 }
