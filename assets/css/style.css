@@ -4,43 +4,43 @@
   --not-activ-color: #E8E2D5;
   --font-size: 16px;
   --border-size: 0.5rem;
-  
+  --font-family: 'Gilroy';
 }
-body{
-  padding: 0.5rem 1rem;
+body{  
+  font-family: var(--font-family);
   font-size: var(--font-size) ;
-}
+  }
 
 .article-capture{  
-  font-size: 1.3rem;  
- }
+  font-family: 'Trajan Pro 3';
+  font-size: 1.5rem;  
+  font-weight: 400;
+  line-height: 1.8rem;  
+}
 
- .article-text{
-  font-size: 0.9rem;
+.article-text{
+  font-family: 'Gilroy';
+  font-size: 1rem;  
+  font-weight: 400;
+  line-height: 1rem;  
 }
- .btn-submit{  
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
-    background-color: var(--color-of-theme);
-}
+
 .white-font{
   color: var(--white-color);
 }
 .theme-color-font{
   color: var(--color-of-theme);
 }
-  .main-border{
+.main-border{
     border: 1px solid #CCCCCC;
     border-radius: var(--border-size);
-  }
-  .margin-Y{
+}
+.margin-Y{
     margin: 1rem 0;
-  }
-
-
- .aling-center{
+}
+.aling-center{
    text-align: center;
- } 
+} 
  
 .uppercase{
   text-transform: uppercase;
@@ -49,7 +49,11 @@ body{
 .box-shadow{
   box-shadow: 0px 0px 6px 0px rgba(34, 60, 80, 0.3);
 }
-
+.text-overflow{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 /* чтобы текст небыл более 2х строк */
 .row-overflow{
   max-height: calc(1.5rem*2);
@@ -59,3 +63,5 @@ body{
   -webkit-box-orient: vertical; 
   overflow: hidden;
 }
+@media screen and {
+  

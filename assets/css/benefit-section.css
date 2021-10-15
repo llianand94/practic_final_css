@@ -1,0 +1,81 @@
+.benefit-section {
+  padding-top: 1rem;
+  align-items: center;
+}
+.benefit-wrapper-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-benefit {
+  display: flex;    
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-basis: 13rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  
+}
+.card-capture-wrapper {
+  display: flex;
+  width: 100%;
+  margin: 1.2rem 0;
+  align-items: center;
+  font-size: 1.2rem;
+  
+}
+.card-benefit-capture {
+  font-family: "Gilroy";
+  line-height: 1.1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #696969;
+}
+.card-benefit-about {
+  font-family: "Gilroy";
+  line-height: 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #9d9d9d;
+}
+.wrap-img {
+  width: max-content;
+  margin-right: 1rem;
+}
+.card-benefit-image {
+  object-fit: cover;
+  border-radius: 50%;
+}
+@media screen and (min-width: 765px) {
+  .benefit-wrapper-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-between;
+  }
+  .card-benefit {
+    flex-basis: initial;
+    min-height: 200px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .benefit-wrapper-card{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .card-benefit+.card-benefit{
+    margin-left: 1.2rem;
+  }
+  .card-benefit-capture{
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+  }
+  .card-benefit-about{
+    line-height: 1.1rem;
+    font-size: 1rem;
+  }
+}
+
+  

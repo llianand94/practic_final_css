@@ -1,48 +1,78 @@
-.main-heading{
-  width: 50%;
-  }
-.wrapper-img {
-  width: 100%;
-  margin-bottom: 1rem;
+.form-section {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-image: url(./../images/main-theme-image.png);
+  background-repeat: no-repeat;
+  background-size: 15rem;
+  background-position-x: center;
+  background-position-y: 28%;
 }
-.inner-img {
-  --height-divine-by-width: 1.2791;
-  padding-top: calc(var(--height-divine-by-width) * 100%);
-  position: relative;
+.form-article {
+  width: 17rem;
 }
-.to-upp-img {
-  margin: -3rem auto 0;
+.after-element {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 3px solid var(--white-color);
+  background-color: var(--color-of-theme);
 }
-.img {
-  display: inline-block;
-  height: inherit;
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+.after-element > * {
+  display: block;
+  margin: 0.3rem auto;
+  text-align: center;
+  color: var(--white-color);
+  font-size: 0.6rem;
+}
+.question-form {
+  margin-top: 16rem;
 }
 .question-form > * {
   width: 100%;
   margin-bottom: 1rem;
 }
 
-
 .question-form > input {
   padding: 0.5rem;
+}
+
+::placeholder,
+input::placeholder {
+  color: #c2c2c2;
+  font-size: 0.8rem;
+  font-family: "Gilroy";
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+textarea {
+  padding: 0.5rem;
+  resize: none;
 }
 
 .submit-question-wrapper {
   display: flex;
   align-items: center;
 }
-span.text-checkbox {
+.submit-question-wrapper .btn-submit {
+  margin-left: auto;
+}
+.text-checkbox {
   margin: 0 0.5rem;
   font-size: 0.7rem;
-  line-height: 0.8rem;
+  line-height: 0.7rem;
+  color: #a3a3a3;
+  font-family: "Gilroy";
+  font-weight: 400;
+}
+.btn-submit {
+  padding: 0.5rem 1rem;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 0.8rem;
+  background-color: var(--color-of-theme);
 }
 .bg-image .btn-submit {
   display: block;
@@ -50,13 +80,17 @@ span.text-checkbox {
   margin: 1rem auto 0;
   text-align: center;
 }
+.bg-wrapper {
+  padding-right: 1rem;
+  padding-left: 1.5rem;
+}
 .bg-image {
   position: relative;
   margin: 0 auto;
   padding: 4rem 1.5rem 1.5rem;
   border-radius: var(--border-size);
   box-shadow: 0px 7px 5px 0px rgba(34, 60, 80, 0.2);
-  background-image: url("./../images/bg-image-hand-pen.jpg.jpg");
+  background-image: url("./../images/bg-image-hand-pen.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 90%;
@@ -99,75 +133,116 @@ span.text-checkbox {
   font-size: 0.6rem;
 }
 
-::placeholder,
-input::placeholder {
-  font-size: 0.8rem;
-  font-family: sans-serif;
-  color: #c2c2c2;
+@media screen and (min-width: 460px) {
+  .form-section {
+    margin: 0 auto;
+    background-position-y: 22%;
+  }
+  .question-form {
+    margin-top: 17rem;
+  }
 }
-textarea {
-  padding: 0.5rem;
-  resize: none;
-}
+
 @media screen and (min-width: 768px) {
   .form-section {
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 2rem auto;
+    background-position-x: 0rem;
+    background-position-y: -3rem;
+    background-size: 21rem;
+  }
+  .form-article {
     position: relative;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: stretch;
+    width: 70%;
   }
-  .main-heading{
-    position: relative;
-    margin-top: 2rem;
+  .question-form {
+    margin-top: 1rem;
   }
-  .main-heading+.article-text{
-    margin-bottom: 1rem;
+  span.text-checkbox {
+    margin-right: auto;
   }
-  .wrapper-img {
-    position: absolute;
-    left: -5%;
-  }
-  
   .after-element {
     display: block;
     position: absolute;
-    right: 0;
-    top: 1rem;
+    right: 5%;
+    top: 12%;
   }
-  .text-checkbox{
-    flex-basis: 45%;
-  }
-  .btn-submit{
-    margin-left: auto;
+}
+@media screen and (min-width: 992px) {
+  .form-section {
+    background-position-x: 3rem;
+    background-position-y: -5rem;
+    background-size: 22rem;
   }
 }
 @media screen and (min-width: 1024px) {
-.main-heading{
-  width: 100%;
+  .form-section {
+    margin-top: 6rem;
   }
-  
-  .main-heading+.article-text{
-    width: 90%;
-    margin-bottom: 2rem;
-      }
-  .after-element {
-    top: 4rem;
+  .article-capture{
+    font-size: 1.6rem;
   }
-  .wrapper-img {
-    position: absolute;
-    left: 0;
+  .form-article {
+    width: 100%;    
   }
-  .submit-question-wrapper{
+  .form-text {
+    width: 80%;
+  }
+  .submit-question-wrapper {
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
-  .text-checkbox{
-    flex-basis: 90%;
+  .text-checkbox {
+    width: 90%;
+    font-size: 0.9rem;
+    line-height: 1rem;
   }
-  .btn-submit{
-    margin-top: 1rem;
+  .submit-question-wrapper .btn-submit,
+  .bg-image .btn-submit {
     margin-left: 0;
     margin-right: auto;
+    margin-top: 1rem;
+    padding: 0.8rem 1.1rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+  .after-element {
+    right: 3%;
+    top: 26%;
+  }
+  .bg-image{
+    margin-bottom: 3rem;
+  }
+  
+}
+@media screen and (min-width: 1200px) {
+  .form-section {
+    background-position-y: -6rem;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .article-capture{
+    font-size: 2rem;
+  }
+  .article-text{
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }  
+  
+  ::placeholder,
+  input::placeholder {
+    font-size: 1rem;
+  }
+  .text-checkbox {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .submit-question-wrapper .btn-submit,
+  .bg-image .btn-submit {
+    padding: 1rem 1.3rem;
+    font-size: 1rem;
+    line-height: 1rem;
   }
 }

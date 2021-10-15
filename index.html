@@ -6,16 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Classic lows</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/fonts.css" type="text/css">
   <link rel="stylesheet" href="./assets/css/custom-grid.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/navigation-section.css">
   <link rel="stylesheet" href="./assets/css/form-section.css">
-  <link rel="stylesheet" href="./assets/css/services-screen.css">
-  <link rel="stylesheet" href="./assets/css/benefit-screen.css">
+  <link rel="stylesheet" href="./assets/css/services-section.css">
+  <link rel="stylesheet" href="./assets/css/benefit-section.css">
+  <link rel="stylesheet" href="./assets/css/help-section.css">
+  <link rel="stylesheet" href="./assets/css/rewiews-section.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  
 </head>
 <body>
   <header class="navigation-section main-border">
-    <nav class="container flex">
+    <nav class="nav-row-wrapper col-12 ">
       <a href="#" class="logo">Классика права</a>
       <div class="nav-btn-wrapper box-shadow">
         <a href="#" class="nav-btn">
@@ -24,32 +29,55 @@
           <img src="./assets/images/little-strip.png" alt="strip">
         </a>   
       </div>   
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#main" class="nav-link">+7 (000) 000-00-00</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">Бесплатная консультация</a></li>
-          <li class="nav-item"><a href="" class="nav-link">заказать звонок</a></li>
-          <li class="nav-item"><a href="" class="nav-link">войти регистрация</a></li>
-          
-        </ul>      
+      <ul class="nav-list white-font">
+        <li class="nav-item">
+          <div class="consult-wrapper">
+            <a href="#" class="nav-link">+7 (000) 000-00-00</a>
+            <a href="#about" class="nav-link">Бесплатная консультация</a>
+          </div>
+        <li class="order-call nav-item uppercase main-border"><a href="#" class="nav-link">заказать звонок</a></li>
+        <li class="log-in nav-item uppercase"><a href="#" class="nav-link">войти/регистрация</a></li>
+      </ul>
+      <ul class="added-list-wrapper uppercase">
+        <li class="added-list-item">
+          <a href="#">Компания <span class="arrow-down"></span></a>
+          </li>
+        <li class="added-list-item">
+          <a href="#">Каталог<span class="arrow-down"></span></a>
+          <ul class="inner-list show-bottom">
+            <li class="inner-li arrow-right">Оконные системы</li>
+            <li class="inner-li arrow-right">Фассадные системы
+              <ul class="inner-list show-right">
+                <li class="inner-li">Структурный фасад</li>
+                <li class="inner-li">Полуструктурый "горизонтальная линия"</li>
+                <li class="inner-li">Цветные МФУ</li>
+                <li class="inner-li">Измерительное оборудование</li>
+              </ul>
+            </li>
+            <li class="inner-li arrow-right">Уличная мебель</li>
+            <li class="inner-li arrow-right">Мильтимедиа проекторы</li>
+            <li class="inner-li arrow-right">Цветные МФУ</li>
+            <li class="inner-li arrow-right">Измерительное оборудование</li>          
+          </ul>
+        </li>
+        <li class="added-list-item"><a href="#">Контакты</a></li>
+        <li class="added-list-item"><a href="#">Вопросы и ответы</a></li>
+        <li class="added-list-item"><a href="#">Прайс лист</a></li>
+        <li class="added-list-item"><a href="#">Услуги</a></li>
+        <li class="added-list-item "><a class="find-item" href="#"></a></li>
+      </ul>      
     </nav>
   </header>
-  <section class="form-section container">
-    <article class="col-12 col-md-7 col-lg-7">
-      
-        <h1 class="main-heading article-capture margin-Y uppercase theme-color-font">задайте вопрос  юристу онлайн</h1>
-        <p class="article-text">Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании</p>
-
-        <div class="after-element box-shadow">
-          <img src="./assets/images/photo-man.png" alt="" >
-          <span>30 online</span>
-        </div>
-    </article>
-      <div class="col-12 col-md-5 col-lg-4 col-xl-3 wrapper-img">
-        <div class="inner-img to-upp-img">
-          <img src="./assets/images/main-theme-image.png" alt="main image" class="img">
-        </div>
+  <section class="form-section">
+    <article class="col-12 col-md-6 col-xl-6">
+      <h1 class="form-article article-capture margin-Y theme-color-font">задайте вопрос юристу онлайн</h1>
+      <p class="form-text article-text">Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании</p>
+      <div class="after-element box-shadow">
+        <img src="./assets/images/photo-man.png" alt="" >
+        <span>30 online</span>
       </div>
-    <div class="col-12 col-md-7">
+    </article>
+    <div class="col-12 col-md-6 col-xl-6">
       <form class="question-form" action="#" method="GET">
 
         <input class="main-border box-shadow" type="text" name="user-info" placeholder="Введите номер Вашего телефона" required>
@@ -62,47 +90,48 @@
 
       </form>
     </div>  
+    
   </section>
-  
+  <section class="bg-wrapper">
     <div class="bg-image col-12">
       <article class="col-sm-9 col-md-6 wrapper-text main-border">
-        <h2 class="article-capture  margin-Y uppercase theme-color-font">юристы  <br> для бизнеса</h2>
+        <h2 class="article-capture  margin-Y theme-color-font">юристы  <br> для бизнеса</h2>
         <p class="article-text">Cопровождение юридических лиц во всех областях права</p>
         <a href="#" class="btn-submit main-border white-font">Заказать звонок</a>
       </article>
     </div> 
   
 
-  <section class="services-screen container">
+  <section class="services-section container">
       
     <article class=" col-12">
-      <h2 class="article-capture margin-Y uppercase aling-center theme-color-font">предоставляемые услуги</h2>
+      <h2 class="article-capture margin-Y aling-center theme-color-font">предоставляемые услуги</h2>
       <p class="article-text aling-center">Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании</p>
     </article>
      
     
       
     
-<div class="card-wrapper">    
-  <article class="galery col-9 col-sm-6 col-md-4 main-border white-font welding">
-    <h2 class="article-capture margin-Y">Ремонт оборудования</h2>
-    <p class="article-text">Частичная или полная передача работ по поддержке, обслуживанию и модернизации ИТ-инфраструктуры в руки компании</p>
+<div class="card-wrapper ">    
+  <article class="galery col-9 col-sm-6 col-md-4 col-lg-3 main-border white-font welding">
+    <h2 class="service-capture margin-Y">Ремонт оборудования</h2>
+    <p class="service-text">Частичная или полная передача работ по поддержке, обслуживанию и модернизации ИТ-инфраструктуры в руки компании</p>
     <a href="#">Подробнее</a>
   </article>
   
-     <article class="galery col-9 building main-border white-font">
-      <h2 class="article-capture margin-Y">Курсы английского</h2>
-      <p class="article-text">Проверка финансово-экономической деятельности организации, проводимая аудитором</p>
+     <article class="galery col-9  col-md-4 col-lg-3 building main-border white-font">
+      <h2 class="service-capture margin-Y">Курсы английского</h2>
+      <p class="service-text">Проверка финансово-экономической деятельности организации, проводимая аудитором</p>
       <a href="#">Подробнее</a>
      </article>
     
-    <article class="galery col-9 training main-border white-font">
-     <h2 class="article-capture margin-Y">Строительство зданий</h2>
-     <p class="article-text">Проверка финансово-экономической деятельности организации, проводимая аудитором</p>
+    <article class="galery col-9  col-md-4 col-lg-3 training main-border white-font">
+     <h2 class="service-capture margin-Y">Строительство зданий</h2>
+     <p class="service-text">Осуществляется от имени и в интересах лиц, учавствующих в деле: сторон, третьих лиц, заявителей и иных заинтересованных лиц.</p>
      <a href="#">Подробнее</a>
     </article>
   </div>  
-    <div class="galery-strip-buttons col-9">
+    <div class="galery-strip-buttons col-9 col-md-6 col-lg-5">
       <div class="strip-btn main-border"></div>
       <div class="strip-btn main-border"></div>
       <div class="strip-btn main-border"></div>
@@ -110,7 +139,7 @@
       <div class="strip-btn main-border"></div>
       <div class="strip-btn main-border"></div>
     </div>
-  <div class="toggle-wrapper margin-Y col-3">    
+  <div class="toggle-wrapper margin-Y">    
       <a href="#">
         <img src="./assets/images/vector-left.png" alt="" srcset="">
       </a>    
@@ -120,13 +149,13 @@
   </div>
 
   </section>
-  <section class="benefit-screen"> 
+  <section class="container benefit-section"> 
     <article class="aling-center margin-Y">
-      <h2 class="article-capture  margin-Y uppercase theme-color-font">Наши преимущества</h2>
+      <h2 class="article-capture  margin-Y theme-color-font">Наши преимущества</h2>
       <p class="article-text">Команда опытных юристов</p>
     </article>
     <div class="benefit-wrapper-card">
-      <article class="col-10    col-md-5 card-benefit main-border">
+      <article class="col-10  col-sm-8  col-md-5 card-benefit main-border box-shadow">
         <div class="card-capture-wrapper">
           <div class="wrap-img">
             <img class="card-benefit-image box-shadow" src="./assets/images/card-benefit-1.png" alt="png">
@@ -136,39 +165,144 @@
         <p class="card-benefit-about">Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке дальнейших направлений развития.</p>
       </article>
   
-  <article class="col-10   col-md-5 card-benefit main-border">
-    <div class="card-capture-wrapper">
-      <div class="wrap-img">
-        <img class="card-benefit-image box-shadow" src="./assets/images/card-benefit-2.png" alt="png">
-      </div> 
-      <h3 class="card-benefit-capture">Весь товар сертифицирован</h3>
+    <article class="col-10 col-sm-8  col-md-5 card-benefit main-border">
+      <div class="card-capture-wrapper">
+        <div class="wrap-img">
+          <img class="card-benefit-image box-shadow" src="./assets/images/card-benefit-2.png" alt="png">
+        </div> 
+        <h3 class="card-benefit-capture">Весь товар сертифицирован</h3>
+      </div>
+      <p class="card-benefit-about">С другой стороны консультация с широким активом позволяет оценить значение новых предложений. Значимость этих проблем настолько очевидна, что реализация намеченных планов.</p>
+    </article>
+
+    <article class="col-10 col-sm-8  col-md-5 card-benefit main-border">
+      <div class="card-capture-wrapper">
+        <div class="wrap-img">
+          <img class="card-benefit-image box-shadow" src="./assets/images/card-benefit-3.png" alt="png">
+        </div> 
+        <h3 class="card-benefit-capture">Широкая сеть представительств</h3>
+      </div>
+      <p class="card-benefit-about"> Таким образом консультация с широким активом способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+    </article>
+
+      <article class="col-10 col-sm-8  col-md-5 card-benefit main-border">
+        <div class="card-capture-wrapper">
+          <div class="wrap-img">
+            <img class="card-benefit-image box-shadow" src="./assets/images/card-benefit-4.png" alt="png">
+          </div> 
+          <h3 class="card-benefit-capture">Оперативная доставка и выгрузка товара</h3>
+        </div>
+        <p class="card-benefit-about">Идейные соображения высшего порядка, а также постоянное информационно-пропогандистское обеспечение нашей деятельности способствует подготовке и реализации позиций.</p>
+      </article>
     </div>
-    <p class="card-benefit-about">С другой стороны консультация с широким активом позволяет оценить значение новых предложений. Значимость этих проблем настолько очевидна, что реализация намеченных планов.</p>
-  </article>
-
-  <article class="col-10   col-md-5 card-benefit main-border">
-    <div class="card-capture-wrapper">
-      <div class="wrap-img">
-        <img class="card-benefit-image box-shadow" src="./assets/images/card-benefit-3.png" alt="png">
-      </div> 
-      <h3 class="card-benefit-capture">Широкая сеть представительств</h3>
-    </div>
-    <p class="card-benefit-about"> Таким образом консультация с широким активом способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
-  </article>
-
-  <article class="col-10   col-md-5 card-benefit main-border">
-    <div class="card-capture-wrapper">
-      <div class="wrap-img">
-        <img class="card-benefit-image box-shadow" src="./assets/images/card-benefit-4.png" alt="png">
-      </div> 
-      <h3 class="card-benefit-capture">Оперативная доставка и выгрузка товара</h3>
-    </div>
-    <p class="card-benefit-about">Идейные соображения высшего порядка, а также постоянное информационно-пропогандистское обеспечение нашей деятельности способствует подготовке и реализации позиций.</p>
-  </article>
-</div>
-
-
   </section>
-  
+  <section class="help-section container margin-Y">
+    <article class='col-12 col-md-5 col-lg-4'>
+      <h2 class="article-capture margin-Y "><span class="theme-color-font">Юридическая помощь </span>начинается с консультации</h2>
+      <ul class="help-section-list article-text">
+        <li class="margin-Y">Заполните форму заявки, чтобы получить первую бесплатную консультацию по Вашей ситуации</li>
+        <li class="margin-Y">Наш менеджер свяжется с Вами в ближайшее время</li>
+      </ul>
+    </article>
+    <form class="help-section-form col-7 col-md-4 col-lg-3" action="#" method="GET" >
+      <span class="input-description margin-Y">Введите Ваше имя</span>
+      <input class="bg-user bottom-border " 
+                type="text" placeholder="Кристи">
+      <span class="input-description margin-Y">Введите номер телефона</span>
+      <input class="bg-phone bottom-border " 
+                type="text" placeholder="+7(___)___-__-__" pattern="">
+      <input class="get-help btn-submit main-border white-font margin-Y" 
+              type="submit" value="Получить консультацию">
+      <p class="agree-text">Нажимая на кнопку, Вы даете согласие на обработку <a class="agree-link" href="#">персональных данных</a></p>
+    </form>
+    <div class="phone-img-wrapper col-5 col-md-3 col-lg-3">
+      <img src="./assets/images/iPhone-X-Mockup.png" alt="iPhone-X-Mockup">
+      
+    </div>
+  </section>
+  <section class="rewiews-section container">
+    <article class="aling-center margin-Y col-12">
+      <h2 class="article-capture aling-center margin-Y theme-color-font">Отзывы</h2>
+      <p class="article-text">За долгое время работы, мы собрали десятки отзывов, которые помогут сформировать мнение о нашей работе</p>
+    </article>
+    <div class="card-wrapper">
+      <article class="user-rewiew-card  main-border col-12 col-md-5">
+        <div class="star-wrapper ">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <p class="rewiew-text margin-Y article-text">В результате действий команды юристов удалось взыскать задолженость в размере 7 045 515 рублей</p>
+        <div class="user-img-wrapper">
+          <img src="./assets/images/user-photo.png" alt="man-photo" class="user-image">
+          <div class="user-info">
+            <p class="user-name">Алексей К.В.</p>
+            <p class="user-company theme-color-font">ООО "Энергон"</p>
+          </div>
+        </div>
+      </article>
+      <article class="user-rewiew-card  main-border col-12 col-md-5">
+        <div class="star-wrapper ">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <p class="rewiew-text margin-Y article-text">В результате действий команды юристов удалось взыскать задолженость в размере 7 045 515 рублей</p>
+        <div class="user-img-wrapper">
+          <img src="./assets/images/user-photo.png" alt="man-photo" class="user-image">
+          <div class="user-info">
+            <p class="user-name">Алексей К.В.</p>
+            <p class="user-company theme-color-font">ООО "Энергон"</p>
+          </div>
+        </div>
+      </article>
+    </div>  
+
+    <div class="galery-strip-buttons col-9 col-md-6 col-lg-5">
+      <div class="strip-btn main-border"></div>
+      <div class="strip-btn main-border"></div>
+      <div class="strip-btn main-border"></div>
+      <div class="strip-btn main-border"></div>
+      <div class="strip-btn main-border"></div>
+      <div class="strip-btn main-border"></div>
+    </div>
+  <div class="toggle-wrapper margin-Y">    
+      <a href="#">
+        <img src="./assets/images/vector-left.png" alt="" srcset="">
+      </a>    
+      <a href="#">
+        <img src="./assets/images/vector-right.png" alt="" srcset="">
+      </a>    
+  </div>
+  </section>
+<section>
+  <footer class="footer white-font">
+      <ul class="footer-list-wrapper uppercase col-12 col-md-5 col-lg-8">
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Прайс лист</a></li>
+        <li><a href="#">Компания</a></li>
+        <li><a href="#">Вопросы и ответы</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    <div class="call-info col-7 col-md-4">
+      <span>+7 (000) 
+        <i class="white-font">000-00-00</i>
+      </span>
+      <a  href="#">info@classica-prava</a>
+    </div>
+    <div class="messangers-wrapper col-5 col-md-4">
+      <a class="img-youtube" href="#"></a>
+      <a class="img-vk" href="#"></a>
+      <a class="img-instagram" href="#"></a>
+    </div>
+    <span class="company-name col-12 col-md-4">г. Красноярск    ООО"Классика Права"</span>
+    <span class="copy-rights col-12 col-md-4">2021 Все права защищены</span>
+  </footer>
+</section>
 </body>
 </html>

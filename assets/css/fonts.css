@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Trajan Pro 3';
+  src: local('Trajan Pro 3 Regular'), local('Trajan-Pro-3-Regular'),
+      url('./../fonts/TrajanPro3Regular/TrajanPro3Regular.woff2') format('woff2'),
+      url('./../fonts/TrajanPro3Regular/TrajanPro3Regular.woff') format('woff'),
+      url('./../fonts/TrajanPro3Regular/TrajanPro3Regular.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+      url('./../fonts/Gilroy-Regular/Gilroy-Regular.woff2') format('woff2'),
+      url('./../fonts/Gilroy-Regular/Gilroy-Regular.woff') format('woff'),
+      url('./../fonts/Gilroy-Regular/Gilroy-Regular.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy Medium'), local('Gilroy-Medium'),
+      url('./../fonts/Gilroy-Medium/Gilroy-Medium.woff2') format('woff2'),
+      url('./../fonts/Gilroy-Medium/Gilroy-Medium.woff') format('woff'),
+      url('./../fonts/Gilroy-Medium/Gilroy-Medium.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+      url('./../fonts/Gilroy-Semibold/Gilroy-Semibold.woff2') format('woff2'),
+      url('./../fonts/Gilroy-Semibold/Gilroy-Semibold.woff') format('woff'),
+      url('./../fonts/Gilroy-Semibold/Gilroy-Semibold.ttf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+      url('./../fonts/Gilroy-Bold/Gilroy-Bold.woff2') format('woff2'),
+      url('./../fonts/Gilroy-Bold/Gilroy-Bold.woff') format('woff'),
+      url('./../fonts/Gilroy-Bold/Gilroy-Bold.ttf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Regular'), local('Roboto-Regular')
+    url(./../fonts/Roboto/Roboto-Regular.ttf) format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Medium'), local('Roboto-Medium') 
+    url(./../fonts/Roboto/Roboto-Medium.ttf) format('opentype');
+  font-weight: 500;
+}
